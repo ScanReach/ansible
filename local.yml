@@ -1,0 +1,10 @@
+- hosts: localhost
+  connection: local
+  become: true
+
+  tasks:
+
+  - name: Install update and update repository index
+    apt:
+      update_cache: yes
+
