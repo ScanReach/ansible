@@ -11,3 +11,10 @@
     group: root
     mode: 0440
 
+- name: Ensure ansible-pull log file exists
+  file:
+    path: /var/log/ansible-pull.log
+    state: touch
+    owner: ansible
+    group: ansible
+    mode: 0664
