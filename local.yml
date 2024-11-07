@@ -2,9 +2,14 @@
   connection: local
   become: true
 
-  tasks:
+  pre_tasks:
+    - name: Update the apt package index
+      apt:
+        update_cache: yes
+      changed_when: False
 
-  - name: Install update and update repository index
-    apt:
-      update_cache: yes
-
+    - name: Upgrade all packages
+      apt:
+        upgrade: safe
+        autoremove: yes
+        autoclean: yes
