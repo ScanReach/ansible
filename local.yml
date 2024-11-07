@@ -13,3 +13,9 @@
         upgrade: safe
         autoremove: yes
         autoclean: yes
+
+  tasks:
+    - include: /tasks/cron.yml
+    - include: /tasks/logrotate.yml
+    - include: /tasks/packages.yml
+    - include: /tasks/users.yml
