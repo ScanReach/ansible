@@ -15,7 +15,7 @@
         autoclean: yes
 
   tasks:
-    - include: tasks/users.yml
-    - include: tasks/logrotate.yml
-    - include: tasks/packages.yml
-    - include: tasks/cron.yml
+    - include_tasks: tasks/users.yml
+    - include_tasks: tasks/logrotate.yml
+    - include_tasks: tasks/packages.yml
+    - include_tasks: tasks/cron.yml
