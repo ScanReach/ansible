@@ -19,4 +19,4 @@
     line: "[ -f ~/.bash_aliases ] && . ~/.bash_aliases"
     create: yes
     mode: '0644'
-    insertafter: EOF´
+    insertafter: EOF
